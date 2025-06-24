@@ -46,12 +46,12 @@ header p {
 
 .hero-media video {
   width: 100%;
-  max-width: 400px;
-  max-height: 200px;
+  max-width: 960px;
+  max-height: 540px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  object-fit: cantain;
 }
 
 section {
