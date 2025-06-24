@@ -4,63 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ByteMatrix | Learn & Grow</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header data-aos="fade-down">
-    <h1>Transform Your Ideas Into Reality</h1>
-    <p>ByteMatrix crafts powerful digital solutions — from sleek websites to engaging content and smart strategies.</p>
-    <div class="video-overlay-text-above">Watch us in action — powering brands with passion.</div>
-    <div class="hero-media">
-      <video autoplay muted loop playsinline>
-        <source src="media/office.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
+
+  <header>
+    <h1>Welcome to ByteMatrix</h1>
+    <p>Your Gateway to Digital Excellence</p>
   </header>
 
-  <section data-aos="fade-up">
+  <div class="video-overlay-text-above">Explore Our Courses and Services</div>
+
+  <div class="hero-media">
+    <video autoplay muted loop>
+      <source src="media/office.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <section>
     <h2>Our Services</h2>
     <div class="services-grid">
       <div class="service-card">
-        <img src="media/web-dev.jpg" alt="Web Development">
-        <h3>Web Development</h3>
-        <p>Modern, responsive websites built to grow your brand.</p>
-        <a href="#">Learn more</a>
+        <div class="service-image-wrapper">
+          <img src="media/web-dev.jpg" alt="Web Development" />
+          <span class="service-badge">Popular</span>
+        </div>
+        <div class="service-content">
+          <h3>Web Development</h3>
+          <p>Modern, responsive websites built to grow your brand.</p>
+          <a href="#">Learn more</a>
+        </div>
       </div>
+
       <div class="service-card">
-        <img src="media/video-editing.jpg" alt="Video Editing">
-        <h3>Video Editing</h3>
-        <p>Compelling video content tailored to your business.</p>
-        <a href="#">Learn more</a>
+        <div class="service-image-wrapper">
+          <img src="media/video-editing.jpg" alt="Video Editing" />
+          <span class="service-badge">New</span>
+        </div>
+        <div class="service-content">
+          <h3>Video Editing</h3>
+          <p>High-quality editing services for content creators and businesses.</p>
+          <a href="#">Learn more</a>
+        </div>
       </div>
+
       <div class="service-card">
-        <img src="media/marketing.jpg" alt="Marketing">
-        <h3>Marketing</h3>
-        <p>Boost visibility with smart, strategic campaigns.</p>
-        <a href="#">Learn more</a>
+        <div class="service-image-wrapper">
+          <img src="media/marketing.jpg" alt="Marketing" />
+          <span class="service-badge">Top Rated</span>
+        </div>
+        <div class="service-content">
+          <h3>Marketing</h3>
+          <p>Reach your audience through strategic digital campaigns.</p>
+          <a href="#">Learn more</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="contact" data-aos="fade-up">
-    <h2>Get in Touch</h2>
-    <input type="text" placeholder="Your Name"><br>
-    <input type="email" placeholder="Your Email"><br>
-    <textarea rows="4" placeholder="Your Message"></textarea><br>
-    <button>Send Message</button>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required /><br>
+      <input type="email" placeholder="Your Email" required /><br>
+      <textarea rows="4" placeholder="Your Message"></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    &copy; 2025 ByteMatrix. All rights reserved.
+    <p>&copy; 2025 ByteMatrix. All rights reserved.</p>
   </footer>
 
-  <button class="scroll-to-top">↑</button>
+  <button class="scroll-to-top" id="scrollToTopBtn">&#8679;</button>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
